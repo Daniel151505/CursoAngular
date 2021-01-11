@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CursoAngular';
+
+  // Creando nuevo atributo con su respectivo valor
+  saludo = 'Saludos desde Angular';
 }
