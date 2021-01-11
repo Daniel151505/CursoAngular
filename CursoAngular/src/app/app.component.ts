@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'CursoAngular';
+  title = 'Nuevo Usuario';
 
   // Creando nuevo atributo con su respectivo valor
-  saludo = 'Saludos desde Angular';
+  saludo = 'Saludos Usuario';
 }
