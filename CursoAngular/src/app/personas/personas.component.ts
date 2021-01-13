@@ -12,4 +12,13 @@ export class PersonasComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  nombre: string ='Daniel';
+  apellido: string = ' Altamirano';
+  edad: number = 15;
+  
+  //metodo getEdad
+getEdad() :number {
+  return this.edad;
+}
+
 }
