@@ -1,3 +1,4 @@
+<div class="container">
 <p>Listado de Personas</p>
 
 
@@ -11,3 +12,11 @@ Apellido: {{apellido}}
 Edad: {{getEdad()}}
     <!-- Interpolacion -->
 </p>
+
+<!-- Evento Keyup se ejecuta al levantar la tecla (keyup)='tiempo' -->
+<div (keyup)='0'>
+  <label>Repetidor:</label>
+  <input #entrada type="text" class="form-control">
+  {{entrada.value}}
+</div>
+</div>
