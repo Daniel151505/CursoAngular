@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { PersonasComponent } from './personas/personas.component';
 import { FormsModule } from '@angular/forms';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
+import { EmpleadosComponent } from './empleados/empleados.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PersonasComponent,
-    CalculadoraComponent
+    CalculadoraComponent,
+    EmpleadosComponent
   ],
   imports: [
     BrowserModule,
