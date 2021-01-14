@@ -1,12 +1,18 @@
 
 
 <router-outlet></router-outlet>
-<div style="text-align: center;">
+<div class="container">
 <!-- Interpolación {{valor}} jala el atributo con el valor de app.componet.ts -->
 <h1> Bienvenido: {{title}} </h1>
 <h2> {{saludo}} </h2>
-
 <!-- Usando selector app-personas para llamar al componenente de personas -->
 <app-personas></app-personas>
+
+<label>Titulo Persona</label>
+<!-- Evento Input  (input)='metodo($event)' para capturar lo que escribimos en el input y pasarlo a nuestro metodo -->
+<input type="text" class="form-control" (input)='modificarTitulo($event)'>
+
+<!-- Se muestra el titulo modificado por el metodo -->
+<h3> {{titulo}} </h3>
 
 </div>
