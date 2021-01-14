@@ -11,8 +11,12 @@
 <label>Titulo Persona</label>
 <!-- Evento Input  (input)='metodo($event)' para capturar lo que escribimos en el input y pasarlo a nuestro metodo -->
 <input type="text" class="form-control" (input)='modificarTitulo($event)'>
-
 <!-- Se muestra el titulo modificado por el metodo -->
 <h3> {{titulo}} </h3>
 
+<label>Titulo Producto</label>
+<!-- Usando two way binding [(ngModel)]="variable" mod  -->
+<input type="text" class="form-control" [(ngModel)]="producto"  >
+<!-- Se muestra lo modificado en el input gracias al two way binding -->
+<p>{{producto}} </p>
 </div>
