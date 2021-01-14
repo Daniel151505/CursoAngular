@@ -16,10 +16,22 @@ Edad: {{getEdad()}}
 <!-- Evento (click)="metodo" .... Al dar click ejecuta el metodo y muestra el nuevo mensaje asignado-->
 <button class="btn btn-primary" [disabled]='deshabilitar'
 (click)="agregarPersona()" >Agregar Persona</button>
-
 <!-- Interpolación {{mensaje}} -->
- 
 <p> {{mensaje}} </p>
+
+
+   <h1>ngIf</h1>
+   <button class="btn btn-primary" [disabled]='deshabilitar'
+    (click)="boton()" >Agregar Persona</button>
+    <!-- Interpolación {{mensaje1}} y agregando directiva ngIf-else -->
+    <p *ngIf="mostrar; else sinPersona" > {{mensaje1}} </p>
+    <ng-template #sinPersona>
+        <p>No se a presionado el botón</p>
+    </ng-template>
+    
+
+
+
 <!-- Evento Keyup se ejecuta al levantar la tecla (keyup)='tiempo' -->
 <div (keyup)='0'>
   <label>Repetidor:</label>
