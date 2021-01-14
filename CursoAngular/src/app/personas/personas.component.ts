@@ -1,3 +1,4 @@
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -18,6 +19,8 @@ export class PersonasComponent implements OnInit {
   edad: number = 15;
   deshabilitar= false;
   mensaje='No se ha agregado ni una persona'
+  mostrar= false;
+  mensaje1='';
   
   //metodo getEdad
 getEdad() :number {
@@ -26,8 +29,13 @@ getEdad() :number {
 
 //Metodo agregarPersona
 agregarPersona(){
-
   this.mensaje='Persona agregada'
+
+}
+
+boton(){
+  this.mostrar=true;
+  this.mensaje1='Boton confirmado'
 
 }
 
