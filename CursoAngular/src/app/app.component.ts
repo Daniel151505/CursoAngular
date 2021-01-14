@@ -10,6 +10,7 @@ export class AppComponent {
   // Creando nuevo atributo con su respectivo valor
   saludo = 'Saludos Usuario';
   titulo='';
+  producto='';
 
 //Agregando metodo 
 modificarTitulo(event: Event){
