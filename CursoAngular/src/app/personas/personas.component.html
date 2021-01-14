@@ -13,9 +13,13 @@ Edad: {{getEdad()}}
     <!-- Interpolacion -->
 </p>
 <!-- Property Binding [propiedad]='variable'  -->
+<!-- Evento (click)="metodo" .... Al dar click ejecuta el metodo y muestra el nuevo mensaje asignado-->
+<button class="btn btn-primary" [disabled]='deshabilitar'
+(click)="agregarPersona()" >Agregar Persona</button>
 
-<button class="btn btn-primary" [disabled]='deshabilitar' >Agregar Persona</button>
-
+<!-- Interpolación {{mensaje}} -->
+ 
+<p> {{mensaje}} </p>
 <!-- Evento Keyup se ejecuta al levantar la tecla (keyup)='tiempo' -->
 <div (keyup)='0'>
   <label>Repetidor:</label>
