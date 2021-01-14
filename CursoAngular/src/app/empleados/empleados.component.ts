@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Persona } from './empleados.model';
 
 @Component({
   selector: 'app-empleados',
@@ -11,5 +12,12 @@ export class EmpleadosComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  titulos='Listado de empleados'
+  personas: Persona[] = [
+    new Persona('Jhon','Soto'),
+    new Persona('Sara','Connor')
+  
+  ];
 
 }
