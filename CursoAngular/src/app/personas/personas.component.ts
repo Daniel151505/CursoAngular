@@ -15,10 +15,13 @@ export class PersonasComponent implements OnInit {
   nombre: string ='Daniel';
   apellido: string = ' Altamirano';
   edad: number = 15;
+  deshabilitar= false;
   
   //metodo getEdad
 getEdad() :number {
   return this.edad;
 }
+
+  
 
 }
