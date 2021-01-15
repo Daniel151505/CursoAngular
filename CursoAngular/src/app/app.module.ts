@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
 import { EmpleadosComponent } from './empleados/empleados.component';
 import { LoggingService } from './LoggingService.service';
+import { personasService } from './personas.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { LoggingService } from './LoggingService.service';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [LoggingService],
+  providers: [LoggingService, personasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
