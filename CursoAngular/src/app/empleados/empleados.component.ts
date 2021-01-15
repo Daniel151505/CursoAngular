@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoggingService } from '../LoggingService.service';
 import { Persona } from './empleados.model';
 
 @Component({
@@ -8,7 +9,7 @@ import { Persona } from './empleados.model';
 })
 export class EmpleadosComponent implements OnInit {
 
-  constructor() { }
+  constructor(private loggingService:LoggingService) { }
 
   ngOnInit(): void {
   }
@@ -30,6 +31,9 @@ export class EmpleadosComponent implements OnInit {
 
   //Jalando datos de apellidoInput y nombreInput
   let empleado1 = new Persona(this.nombreInput, this.apellidoInput)
+  
+  //Usando el servicio de Logging Service y mandando dato
+  this.loggingService.enviarMernsajeConsola('Enviamos persona '+ empleado1.nombre)
   
   //Agregando los datos al arreglo personas
   this.personas.push(empleado1)
