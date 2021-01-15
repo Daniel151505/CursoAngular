@@ -1,3 +1,20 @@
+<form action="">
+
+<div>
+    <label>Nombre</label>
+    <input class="form-control" placeholder="Ingresa Nombre" name="nombre" [(ngModel)]="nombreInput" >
+</div>
+
+<div>
+   <label>Apellido</label>
+   <input class="form-control" placeholder="Ingresa Apellido" name="apellido" [(ngModel)]="apellidoInput"  > 
+</div>
+
+<button type="submit" class="btn btn-primary" (click)="agregarEmpleado()">Agregar</button>
+
+</form>
+
+
 <div class="container">
     <div class="row">
         <div class="col">
