@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~11.0.3",
     "@angular/platform-browser-dynamic": "~11.0.3",
     "@angular/router": "~11.0.3",
+    "@types/events": "^3.0.0",
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
