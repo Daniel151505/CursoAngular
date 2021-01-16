@@ -10,7 +10,9 @@ import { Persona } from './empleados.model';
 })
 export class EmpleadosComponent implements OnInit {
 
-  constructor(private loggingService:LoggingService, private personasService:personasService ) { }
+  constructor(private loggingService:LoggingService, private personasService:personasService ) {
+
+   }
 
   ngOnInit(): void {
     //Se inicializa el arreglo con el arreglo que esta en personas.service.ts
@@ -39,6 +41,13 @@ export class EmpleadosComponent implements OnInit {
       //Agregando los datos al arreglo empleado
       //this.personas.push(empleado1)
       this.personasService.agregarEmpleado(empleado1)
+
+  }
+
+  //Metodo de Emitir Saludo
+  emitirSaludo(){
+
+    this.personasService.saludar.emit(this.nombreInput);
 
   }
 }
