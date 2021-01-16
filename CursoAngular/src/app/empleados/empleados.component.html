@@ -21,6 +21,7 @@
             <!-- Agregando ngFor para iterar los datos del arreglo -->
             <div *ngFor="let empleado of personas; let i=index">
                 <p> {{i+1}} {{empleado.nombre}} {{ empleado.apellido}} </p>
+                <button type="submit" (click)="emitirSaludo()" class="btn btn-info">Detalle</button>
             </div>
         </div>
     </div>
